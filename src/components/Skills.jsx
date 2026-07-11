@@ -19,7 +19,6 @@ const skillCategories = [
       { name: 'Jig / Mal', color: '#6366F1' },
       { name: 'Scanning Part', color: '#14B8A6' },
       { name: 'Kalibrasi', color: '#F97316' },
-      { name: 'TPS', color: '#EF4444' },
     ],
   },
   {
