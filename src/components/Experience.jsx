@@ -2,13 +2,13 @@ import { useContext, useEffect, useRef, useState } from 'react'
 import { ThemeContext } from '../App'
 
 const certifications = [
-  { title: 'Paklaring Kontrak Operator Produksi', detail: 'Kontrak Kerja Operator Produksi', date: 'Juli 2024', issuer: 'PT. TMMIN', file: '/certificates/sertifikat-01.pdf', color: '#14b8a6' },
-  { title: 'Pelatihan Berbasis Kompetensi', detail: 'Assembly Operator Perangkat Roda 4 Rank C', date: 'Desember 2023', issuer: 'PT. TMMIN', file: '/certificates/sertifikat-02.pdf', color: '#06b6d4' },
-  { title: 'Basic Safety Awareness', detail: 'Keselamatan dan Kesehatan Kerja', date: '2024', issuer: 'PT. TMMIN', file: '/certificates/sertifikat-03.pdf', color: '#f59e0b' },
-  { title: 'Paklaring Operator Produksi Packaging', detail: 'Operator Produksi Ultra-Acting', date: 'Juni 2022', issuer: 'PT. Kaldu Sari Nabati', file: '/certificates/sertifikat-04.pdf', color: '#f97316' },
-  { title: 'Sertifikat Kompetensi BNSP', detail: 'Operator Perakitan Kendaraan Roda 4 Rank C', date: 'Januari 2024', issuer: 'BNSP', file: '/certificates/sertifikat-05.pdf', color: '#ec4899' },
   { title: 'Sertifikat Magang', detail: 'Praktik Kerja Produksi', date: 'Juni 2023', issuer: 'PT. TMMIN', file: '/certificates/sertifikat-06.pdf', color: '#8b5cf6' },
+  { title: 'Pelatihan Berbasis Kompetensi', detail: 'Assembly Operator Perangkat Roda 4 Rank C', date: 'Desember 2023', issuer: 'PT. TMMIN', file: '/certificates/sertifikat-02.pdf', color: '#06b6d4' },
+  { title: 'Sertifikat Kompetensi BNSP', detail: 'Operator Perakitan Kendaraan Roda 4 Rank C', date: 'Januari 2024', issuer: 'PT. TMMIN', file: '/certificates/sertifikat-05.pdf', color: '#ec4899' },
+  { title: 'Basic Safety Awareness', detail: 'Keselamatan dan Kesehatan Kerja', date: '2024', issuer: 'PT. TMMIN', file: '/certificates/sertifikat-03.pdf', color: '#f59e0b' },
+  { title: 'Paklaring Kontrak Operator Produksi', detail: 'Kontrak Kerja Operator Produksi', date: 'Juli 2024', issuer: 'PT. TMMIN', file: '/certificates/sertifikat-01.pdf', color: '#14b8a6' },
   { title: 'Pelatihan Berbasis Kompetensi', detail: 'Assembly Operator Perangkat Roda 4 Rank B', date: 'Juni 2026', issuer: 'PT. TMMIN', file: '/certificates/sertifikat-07.pdf', color: '#10b981' },
+  { title: 'Paklaring Operator Produksi Packaging', detail: 'Operator Produksi Ultra-Acting', date: 'Juni 2022', issuer: 'PT. Kaldu Sari Nabati', file: '/certificates/sertifikat-04.pdf', color: '#f97316' },
 ]
 
 function Reveal({ children, delay = 0 }) {
